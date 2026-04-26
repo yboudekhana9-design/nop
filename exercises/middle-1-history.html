@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التاريخ - السنة الأولى متوسط</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="../index.html" class="logo">📚 محمد بلوزداد</a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../middle.html">التعليم المتوسط</a></li>
+                    <li><a href="../exercises.html">التمارين</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">الرئيسية</a> > 
+            <a href="../middle.html">التعليم المتوسط</a> > 
+            <span>السنة الأولى - التاريخ</span>
+        </div>
+
+        <div class="container">
+            <h1>📜 تمارين التاريخ - السنة الأولى متوسط</h1>
+            <p class="subtitle">محمد بلوزداد - موقع الملخصات والتمارين</p>
+
+            <!-- Exercise Card 1 -->
+            <div class="exercise-card">
+                <h3>التمرين الأول: الحضارة الفرعونية</h3>
+                <p><strong>السؤال:</strong> أجب عن الأسئلة التالية:</p>
+                <p>1. أين توجد مصر القديمة؟</p>
+                <p>2. كم عدد الأهرام الرئيسية في الجيزة؟</p>
+                <p>3. من هو أشهر فرعون مصري؟</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p>1. في شمال إفريقيا على ضفاف نهر النيل</p>
+                    <p>2. ثلاثة أهرام رئيسية (خوفو وخفرع ومنقرع)</p>
+                    <p>3. من أشهرهم توت عنخ آمون وخوفو وتحتمس الثالث</p>
+                </div>
+            </div>
+
+            <!-- Exercise Card 2 -->
+            <div class="exercise-card">
+                <h3>التمرين الثاني: الحضارة الإسلامية</h3>
+                <p><strong>السؤال:</strong> اختر الإجابة الصحيحة:</p>
+                <p>1. في أي سنة بدأت الهجرة النبوية؟</p>
+                <p>   أ) 610 م  ب) 622 م  ج) 632 م</p>
+                <p>2. من أسس الدولة العباسية؟</p>
+                <p>   أ) الخليفة علي  ب) أبو العباس السفاح  ج) هارون الرشيد</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p>1. الجواب الصحيح: ب) 622 م</p>
+                    <p>2. الجواب الصحيح: ب) أبو العباس السفاح</p>
+                </div>
+            </div>
+
+            <!-- Exercise Card 3 -->
+            <div class="exercise-card">
+                <h3>التمرين الثالث: التاريخ الجزائري الحديث</h3>
+                <p><strong>السؤال:</strong> أكمل الجمل التالية:</p>
+                <p>1. استقلت الجزائر عن فرنسا سنة ________</p>
+                <p>2. اندلعت ثورة التحرير الجزائرية سنة ________</p>
+                <p>3. أول رئيس للجزائر المستقلة هو ________</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p>1. استقلت الجزائر عن فرنسا سنة 1962</p>
+                    <p>2. اندلعت ثورة التحرير الجزائرية سنة 1954</p>
+                    <p>3. أول رئيس للجزائر المستقلة هو أحمد بن بلة</p>
+                </div>
+            </div>
+
+            <!-- Tip Section -->
+            <div class="tip-box">
+                <h4>💡 نصائح لدراسة التاريخ:</h4>
+                <ul>
+                    <li>ركز على الأحداث الهامة والتواريخ المهمة</li>
+                    <li>حاول فهم السبب والنتيجة للأحداث التاريخية</li>
+                    <li>استخدم خريطة زمنية لتنظيم الأحداث</li>
+                    <li>اقرأ القصص التاريخية لفهم السياق بشكل أفضل</li>
+                    <li>ناقش ما تتعلمه مع زملائك لتعزيز الفهم</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 محمد بلوزداد - جميع الحقوق محفوظة</p>
+        <div class="footer-links">
+            <a href="../privacy.html">سياسة الخصوصية</a> | 
+            <a href="../terms.html">الشروط والأحكام</a> | 
+            <a href="../contact.html">اتصل بنا</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+                button.textContent = 'إخفاء الإجابة';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'عرض الإجابة';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="الأرقام والعد - تمرين تفاعلي">
+    <title>التمرين الثاني: الأرقام والعد</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .number-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .number-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .number-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .number-name {
+            font-size: 16px;
+            margin-top: 10px;
+            font-weight: normal;
+        }
+
+        @media (max-width: 768px) {
+            .number-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <a href="../index.html" class="logo">
+                <div class="logo-img">📚</div>
+                <span>موقع الملخصات</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../primary.html">الابتدائي</a></li>
+                    <li><a href="../exercises.html">التمارين</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="../index.html">الرئيسية</a> > 
+            <a href="../primary.html">التعليم الابتدائي</a> > 
+            <span>التمرين الثاني: الأرقام والعد</span>
+        </div>
+
+        <!-- Exercise Content -->
+        <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+            <h1>🔢 التمرين الثاني: الأرقام والعد</h1>
+            <p><strong>المستوى:</strong> التحضيري</p>
+            <p><strong>المادة:</strong> الرياضيات</p>
+
+            <h2>🎯 أهداف التمرين</h2>
+            <ul style="padding: 20px 30px; background: #f5f5f5; border-radius: 10px;">
+                <li>تعرّف الأرقام من 0 إلى 10</li>
+                <li>العد بالترتيب الصحيح</li>
+                <li>مطابقة الأرقام مع الكميات</li>
+                <li>تنمية مهارات العد الأساسية</li>
+            </ul>
+
+            <h2>📊 الأرقام من 0 إلى 10</h2>
+            <div class="number-grid">
+                <div class="number-card" onclick="alert('رقم 0: صفر')">
+                    0
+                    <div class="number-name">صفر</div>
+                </div>
+                <div class="number-card" onclick="alert('رقم 1: واحد')">
+                    1
+                    <div class="number-name">واحد</div>
+                </div>
+                <div class="number-card" onclick="alert('رقم 2: اثنين')">
+                    2
+                    <div class="number-name">اثنين</div>
+                </div>
+                <div class="number-card" onclick="alert('رقم 3: ثلاثة')">
+                    3
+                    <div class="number-name">ثلاثة</div>
+                </div>
+                <div class="number-card" onclick="alert('رقم 4: أربعة')">
+                    4
+                    <div class="number-name">أربعة</div>
+                </div>
+                <div class="number-card" onclick="alert('رقم 5: خمسة')">
+                    5
+                    <div class="number-name">خمسة</div>
+                </div>
+                <div class="number-card" onclick="alert('رقم 6: ستة')">
+                    6
+                    <div class="number-name">ستة</div>
+                </div>
+                <div class="number-card" onclick="alert('رقم 7: سبعة')">
+                    7
+                    <div class="number-name">سبعة</div>
+                </div>
+                <div class="number-card" onclick="alert('رقم 8: ثمانية')">
+                    8
+                    <div class="number-name">ثمانية</div>
+                </div>
+                <div class="number-card" onclick="alert('رقم 9: تسعة')">
+                    9
+                    <div class="number-name">تسعة</div>
+                </div>
+                <div class="number-card" onclick="alert('رقم 10: عشرة')">
+                    10
+                    <div class="number-name">عشرة</div>
+                </div>
+            </div>
+
+            <h2>❓ أسئلة التمرين</h2>
+
+            <div style="background: #f0f4ff; padding: 20px; border-radius: 8px; margin-bottom: 20px; border-right: 4px solid #667eea;">
+                <h4>السؤال الأول: العد الصحيح</h4>
+                <p>ما هو الرقم الذي يأتي بعد 5؟</p>
+                <p style="margin: 15px 0; padding: 10px; background: white; border-radius: 5px;">
+                    أ) 4&nbsp;&nbsp;&nbsp;&nbsp;ب) 6&nbsp;&nbsp;&nbsp;&nbsp;ج) 7
+                </p>
+                <button class="exercise-btn" onclick="toggleAnswer(this)" style="width: 100%; margin-top: 10px;">عرض الإجابة</button>
+                <div style="display: none; background: #f9f9f9; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                    <strong>✅ الإجابة الصحيحة: ب) 6</strong>
+                    <p>عند العد، يأتي 6 بعد 5 مباشرة: 1، 2، 3، 4، 5، 6</p>
+                </div>
+            </div>
+
+            <div style="background: #f0f4ff; padding: 20px; border-radius: 8px; margin-bottom: 20px; border-right: 4px solid #667eea;">
+                <h4>السؤال الثاني: مطابقة الأرقام</h4>
+                <p>كم عدد النجوم هنا؟ ⭐⭐⭐⭐</p>
+                <p style="margin: 15px 0; padding: 10px; background: white; border-radius: 5px;">
+                    أ) 3&nbsp;&nbsp;&nbsp;&nbsp;ب) 4&nbsp;&nbsp;&nbsp;&nbsp;ج) 5
+                </p>
+                <button class="exercise-btn" onclick="toggleAnswer(this)" style="width: 100%; margin-top: 10px;">عرض الإجابة</button>
+                <div style="display: none; background: #f9f9f9; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                    <strong>✅ الإجابة الصحيحة: ب) 4</strong>
+                    <p>عند عد النجوم: واحد، اثنين، ثلاثة، أربعة - المجموع 4 نجوم</p>
+                </div>
+            </div>
+
+            <h2>💡 نصائح مهمة</h2>
+            <ul style="padding: 20px 30px; background: #f0f4ff; border-radius: 10px; border-right: 4px solid #667eea;">
+                <li>استخدم أصابعك للعد حتى تتعود</li>
+                <li>مارس العد يومياً</li>
+                <li>استخدم أشياء حقيقية للعد (تفاح، حبات، إلخ)</li>
+                <li>أنشئ ألعاب تعليمية تتضمن العد</li>
+            </ul>
+
+            <a href="../primary.html" class="exercise-btn" style="display: block; margin-top: 30px; text-align: center;">العودة إلى الدروس</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 موقع الملخصات والتمارين - جميع الحقوق محفوظة</p>
+        <div class="footer-links">
+            <a href="#">سياسة الخصوصية</a>
+            <a href="#">الشروط والأحكام</a>
+            <a href="#">اتصل بنا</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.parentElement.querySelector('div:last-of-type');
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+                button.textContent = 'إخفاء الإجابة';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'عرض الإجابة';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العلوم الطبيعية - السنة الثانية متوسط</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="../index.html" class="logo">📚 محمد بلوزداد</a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../middle.html">التعليم المتوسط</a></li>
+                    <li><a href="../exercises.html">التمارين</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">الرئيسية</a> > 
+            <a href="../middle.html">التعليم المتوسط</a> > 
+            <span>السنة الثانية - العلوم الطبيعية</span>
+        </div>
+
+        <div class="container">
+            <h1>🧬 تمارين العلوم الطبيعية - السنة الثانية متوسط</h1>
+            <p class="subtitle">محمد بلوزداد - موقع الملخصات والتمارين</p>
+
+            <!-- Exercise Card 1 -->
+            <div class="exercise-card">
+                <h3>التمرين الأول: الخلية الحية</h3>
+                <p><strong>السؤال:</strong> عرف الخلية وذكر أنواعها؟</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p>الخلية: هي أصغر وحدة حية في الكائن الحي وتحتوي على جميع خصائص الحياة</p>
+                    <p>أنواع الخلايا:</p>
+                    <p>1. خلايا بدائية النواة: لا تحتوي على نواة حقيقية (البكتيريا)</p>
+                    <p>2. خلايا حقيقية النواة: تحتوي على نواة حقيقية (النبات والحيوان)</p>
+                </div>
+            </div>
+
+            <!-- Exercise Card 2 -->
+            <div class="exercise-card">
+                <h3>التمرين الثاني: مكونات الخلية</h3>
+                <p><strong>السؤال:</strong> ذكر وظيفة كل من:</p>
+                <p>1. النواة</p>
+                <p>2. الميتوكندريا</p>
+                <p>3. الكلوروبلاست (في النبات)</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p>1. النواة: تتحكم في أنشطة الخلية وتحتوي على المادة الوراثية (DNA)</p>
+                    <p>2. الميتوكندريا: تنتج الطاقة اللازمة للخلية (تنفس خلوي)</p>
+                    <p>3. الكلوروبلاست: تقوم بعملية البناء الضوئي وإنتاج الغذاء</p>
+                </div>
+            </div>
+
+            <!-- Exercise Card 3 -->
+            <div class="exercise-card">
+                <h3>التمرين الثالث: الوراثة</h3>
+                <p><strong>السؤال:</strong> أي من الصفات التالية وراثية وأيها مكتسبة:</p>
+                <p>- لون العينين | اللغة | لون الشعر | المهارة الرياضية | الطول</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p><strong>صفات وراثية:</strong> لون العينين، لون الشعر، الطول</p>
+                    <p><strong>صفات مكتسبة:</strong> اللغة، المهارة الرياضية</p>
+                    <p><strong>ملاحظة:</strong> الصفات الوراثية تنتقل من الآباء إلى الأبناء عبر الجينات</p>
+                </div>
+            </div>
+
+            <!-- Tip Section -->
+            <div class="tip-box">
+                <h4>💡 نصائح مهمة:</h4>
+                <ul>
+                    <li>استخدم الرسومات التوضيحية لفهم تركيب الخلية</li>
+                    <li>حفظ وظائف العضيات المختلفة في الخلية</li>
+                    <li>فهم الفرق بين الانقسام الميتوزي والميوسي</li>
+                    <li>اهتم بدراسة الوراثة وقانون مندل</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 محمد بلوزداد - جميع الحقوق محفوظة</p>
+        <div class="footer-links">
+            <a href="../privacy.html">سياسة الخصوصية</a> | 
+            <a href="../terms.html">الشروط والأحكام</a> | 
+            <a href="../contact.html">اتصل بنا</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+                button.textContent = 'إخفاء الإجابة';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'عرض الإجابة';
+            }
+        }
+    </script>
+</body>
+</html>

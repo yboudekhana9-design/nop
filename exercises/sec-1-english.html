@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اللغة الإنجليزية - السنة الأولى ثانوي</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="../index.html" class="logo">📚 محمد بلوزداد</a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../secondary.html">التعليم الثانوي</a></li>
+                    <li><a href="../exercises.html">التمارين</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">الرئيسية</a> > 
+            <a href="../secondary.html">التعليم الثانوي</a> > 
+            <span>السنة الأولى - اللغة الإنجليزية</span>
+        </div>
+
+        <div class="container">
+            <h1>🌍 تمارين اللغة الإنجليزية - السنة الأولى ثانوي</h1>
+            <p class="subtitle">محمد بلوزداد - موقع الملخصات والتمارين</p>
+
+            <!-- Exercise Card 1 -->
+            <div class="exercise-card">
+                <h3>التمرين الأول: الماضي التام (Present Perfect)</h3>
+                <p><strong>السؤال:</strong> أكمل الجمل بالشكل الصحيح:</p>
+                <p>1. I _______ (finish) my homework.</p>
+                <p>2. She _______ (visit) Paris three times.</p>
+                <p>3. They _______ (not / arrive) yet.</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p>1. I <strong>have finished</strong> my homework.</p>
+                    <p>2. She <strong>has visited</strong> Paris three times.</p>
+                    <p>3. They <strong>have not arrived</strong> yet.</p>
+                    <p><strong>القاعدة:</strong> نستخدم Have / Has + Past Participle</p>
+                </div>
+            </div>
+
+            <!-- Exercise Card 2 -->
+            <div class="exercise-card">
+                <h3>التمرين الثاني: الجملة الشرطية (Conditional Sentences)</h3>
+                <p><strong>السؤال:</strong> أكمل الجمل الشرطية:</p>
+                <p>1. If I _______ (be) you, I _______ (study) harder.</p>
+                <p>2. If she _______ (come) early, we _______ (go) to the cinema.</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p>1. If I <strong>were</strong> you, I <strong>would study</strong> harder. (النوع الثاني - افتراضي)</p>
+                    <p>2. If she <strong>comes</strong> early, we <strong>will go</strong> to the cinema. (النوع الأول - ممكن)</p>
+                </div>
+            </div>
+
+            <!-- Exercise Card 3 -->
+            <div class="exercise-card">
+                <h3>التمرين الثالث: الفهم والاستيعاب (Reading Comprehension)</h3>
+                <p><strong>النص:</strong></p>
+                <p>Technology has changed our lives dramatically. With the internet, we can connect with people around the world instantly. Students can learn new skills from online courses. Doctors can diagnose diseases remotely. However, we must be careful about the negative effects of technology on our mental health and social relationships.</p>
+                <p><strong>الأسئلة:</strong></p>
+                <p>1. How has technology changed our lives?</p>
+                <p>2. What are two benefits of technology mentioned?</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p>1. Technology has changed our lives dramatically by enabling instant global communication</p>
+                    <p>2. Two benefits: Students can learn from online courses, Doctors can diagnose diseases remotely</p>
+                </div>
+            </div>
+
+            <!-- Tip Section -->
+            <div class="tip-box">
+                <h4>💡 نصائح لتعلم اللغة الإنجليزية في الثانوي:</h4>
+                <ul>
+                    <li>ركز على الأزمنة والجمل الشرطية</li>
+                    <li>مارس القراءة والاستماع بانتظام</li>
+                    <li>احفظ المفردات المتقدمة</li>
+                    <li>تدرب على الكتابة والتحدث</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 محمد بلوزداد - جميع الحقوق محفوظة</p>
+        <div class="footer-links">
+            <a href="../privacy.html">سياسة الخصوصية</a> | 
+            <a href="../terms.html">الشروط والأحكام</a> | 
+            <a href="../contact.html">اتصل بنا</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+                button.textContent = 'إخفاء الإجابة';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'عرض الإجابة';
+            }
+        }
+    </script>
+</body>
+</html>

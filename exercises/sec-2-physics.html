@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفيزياء - السنة الثانية ثانوي</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="../index.html" class="logo">📚 محمد بلوزداد</a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../secondary.html">التعليم الثانوي</a></li>
+                    <li><a href="../exercises.html">التمارين</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">الرئيسية</a> > 
+            <a href="../secondary.html">التعليم الثانوي</a> > 
+            <span>السنة الثانية - الفيزياء</span>
+        </div>
+
+        <div class="container">
+            <h1>⚛️ تمارين الفيزياء - السنة الثانية ثانوي</h1>
+            <p class="subtitle">محمد بلوزداد - موقع الملخصات والتمارين</p>
+
+            <!-- Exercise Card 1 -->
+            <div class="exercise-card">
+                <h3>التمرين الأول: الحركة والسرعة</h3>
+                <p><strong>السؤال:</strong> سيارة تقطع 100 كم في 2 ساعة. احسب السرعة المتوسطة؟</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الحل:</strong></p>
+                    <p>السرعة = المسافة / الزمن</p>
+                    <p>السرعة = 100 كم / 2 ساعة = 50 كم/ساعة</p>
+                    <p><strong>الإجابة:</strong> السرعة المتوسطة = 50 كم/ساعة</p>
+                </div>
+            </div>
+
+            <!-- Exercise Card 2 -->
+            <div class="exercise-card">
+                <h3>التمرين الثاني: القوة والتسارع</h3>
+                <p><strong>السؤال:</strong> قوة مقدارها 20 نيوتن تؤثر على جسم كتلته 5 كيلوجرام. احسب التسارع؟</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الحل:</strong></p>
+                    <p>حسب قانون نيوتن الثاني: F = m × a</p>
+                    <p>20 = 5 × a</p>
+                    <p>a = 20 / 5 = 4 م/ث²</p>
+                    <p><strong>الإجابة:</strong> التسارع = 4 م/ث²</p>
+                </div>
+            </div>
+
+            <!-- Exercise Card 3 -->
+            <div class="exercise-card">
+                <h3>التمرين الثالث: الطاقة والعمل</h3>
+                <p><strong>السؤال:</strong> احسب الطاقة الحركية لجسم كتلته 2 كيلوجرام يتحرك بسرعة 3 م/ث؟</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الحل:</strong></p>
+                    <p>الطاقة الحركية = ½ × m × v²</p>
+                    <p>الطاقة الحركية = ½ × 2 × 3²</p>
+                    <p>الطاقة الحركية = ½ × 2 × 9 = 9 جول</p>
+                    <p><strong>الإجابة:</strong> الطاقة الحركية = 9 جول</p>
+                </div>
+            </div>
+
+            <!-- Tip Section -->
+            <div class="tip-box">
+                <h4>💡 نصائح لدراسة الفيزياء:</h4>
+                <ul>
+                    <li>فهم المفاهيم قبل حفظ الصيغ</li>
+                    <li>تدرب على حل المسائل بشكل منتظم</li>
+                    <li>استخدم الرسومات التوضيحية</li>
+                    <li>تذكر الوحدات القياسية الصحيحة</li>
+                    <li>راجع الأمثلة في الكتاب المدرسي</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 محمد بلوزداد - جميع الحقوق محفوظة</p>
+        <div class="footer-links">
+            <a href="../privacy.html">سياسة الخصوصية</a> | 
+            <a href="../terms.html">الشروط والأحكام</a> | 
+            <a href="../contact.html">اتصل بنا</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+                button.textContent = 'إخفاء الإجابة';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'عرض الإجابة';
+            }
+        }
+    </script>
+</body>
+</html>

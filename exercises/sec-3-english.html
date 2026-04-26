@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اللغة الإنجليزية - البكالوريا</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="../index.html" class="logo">📚 محمد بلوزداد</a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../secondary.html">التعليم الثانوي</a></li>
+                    <li><a href="../exercises.html">التمارين</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">الرئيسية</a> > 
+            <a href="../secondary.html">التعليم الثانوي</a> > 
+            <span>البكالوريا - اللغة الإنجليزية</span>
+        </div>
+
+        <div class="container">
+            <h1>🌍 تمارين اللغة الإنجليزية - البكالوريا</h1>
+            <p class="subtitle">محمد بلوزداد - موقع الملخصات والتمارين</p>
+
+            <!-- Exercise Card 1 -->
+            <div class="exercise-card">
+                <h3>التمرين الأول: القراءة والاستيعاب</h3>
+                <p><strong>النص:</strong> Global warming is one of the most pressing issues facing our world today. It is caused by greenhouse gases such as carbon dioxide and methane, which trap heat in the atmosphere. Scientists warn that without immediate action, the consequences could be catastrophic.</p>
+                <p><strong>السؤال:</strong> What are the main causes of global warming mentioned?</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p>The main causes are greenhouse gases such as carbon dioxide and methane, which trap heat in the atmosphere.</p>
+                </div>
+            </div>
+
+            <!-- Exercise Card 2 -->
+            <div class="exercise-card">
+                <h3>التمرين الثاني: الكتابة الرسمية</h3>
+                <p><strong>السؤال:</strong> اكتب رسالة رسمية إلى مدير المدرسة لطلب يوم عطلة بسبب مرض</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>نموذج إجابة:</strong></p>
+                    <p>Dear Mr./Mrs. [Principal's Name],</p>
+                    <p>I am writing to request a day off from school due to illness. I was not feeling well today and believe it is best for me to rest at home to recover fully.</p>
+                    <p>I will make sure to catch up on any missed work.</p>
+                    <p>Thank you for your understanding.</p>
+                    <p>Sincerely,</p>
+                    <p>[Your Name]</p>
+                </div>
+            </div>
+
+            <!-- Exercise Card 3 -->
+            <div class="exercise-card">
+                <h3>التمرين الثالث: قواعس النحو المتقدمة</h3>
+                <p><strong>السؤال:</strong> أكمل الجملة بالشكل الصحيح:</p>
+                <p>1. If I _______ (have) known about the exam, I _______ (study) harder.</p>
+                <p>2. The book _______ (write) by this author is very popular.</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p>1. If I <strong>had known</strong> about the exam, I <strong>would have studied</strong> harder. (Third conditional)</p>
+                    <p>2. The book <strong>written</strong> by this author is very popular. (Past participle as adjective)</p>
+                </div>
+            </div>
+
+            <!-- Tip Section -->
+            <div class="tip-box">
+                <h4>💡 نصائح لامتحان البكالوريا في الإنجليزية:</h4>
+                <ul>
+                    <li>تدرب على القراءة السريعة والفهم العميق</li>
+                    <li>احفظ كلمات جديدة كل يوم</li>
+                    <li>مارس الكتابة الرسمية والكتابات المختلفة</li>
+                    <li>ركز على الأزمنة والجمل الشرطية المتقدمة</li>
+                    <li>استمع إلى نصوص إنجليزية بانتظام</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 محمد بلوزداد - جميع الحقوق محفوظة</p>
+        <div class="footer-links">
+            <a href="../privacy.html">سياسة الخصوصية</a> | 
+            <a href="../terms.html">الشروط والأحكام</a> | 
+            <a href="../contact.html">اتصل بنا</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+                button.textContent = 'إخفاء الإجابة';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'عرض الإجابة';
+            }
+        }
+    </script>
+</body>
+</html>

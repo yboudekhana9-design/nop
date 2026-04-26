@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الجغرافيا - السنة الثانية متوسط</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="../index.html" class="logo">📚 محمد بلوزداد</a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../middle.html">التعليم المتوسط</a></li>
+                    <li><a href="../exercises.html">التمارين</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">الرئيسية</a> > 
+            <a href="../middle.html">التعليم المتوسط</a> > 
+            <span>السنة الثانية - الجغرافيا</span>
+        </div>
+
+        <div class="container">
+            <h1>🌍 تمارين الجغرافيا - السنة الثانية متوسط</h1>
+            <p class="subtitle">محمد بلوزداد - موقع الملخصات والتمارين</p>
+
+            <!-- Exercise Card 1 -->
+            <div class="exercise-card">
+                <h3>التمرين الأول: مناطق العالم المناخية</h3>
+                <p><strong>السؤال:</strong> أكمل الفراغات:</p>
+                <p>1. المنطقة الاستوائية تتميز بـ ________</p>
+                <p>2. المنطقة الصحراوية تتميز بـ ________</p>
+                <p>3. المنطقة المعتدلة تتميز بـ ________</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p>1. حرارة عالية وأمطار غزيرة وغابات كثيفة</p>
+                    <p>2. قلة الأمطار وحرارة عالية جداً ونبات قليل</p>
+                    <p>3. درجات حرارة متوازنة وأمطار معتدلة</p>
+                </div>
+            </div>
+
+            <!-- Exercise Card 2 -->
+            <div class="exercise-card">
+                <h3>التمرين الثاني: السكان والعمران</h3>
+                <p><strong>السؤال:</strong> اختر الإجابة الصحيحة:</p>
+                <p>1. أكثر المناطق الجغرافية تجمعاً للسكان هي:</p>
+                <p>   أ) الصحاري  ب) الوديان والسهول  ج) الجبال العالية</p>
+                <p>2. أكبر محيط في العالم:</p>
+                <p>   أ) الأطلسي  ب) الهندي  ج) الهادئ</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p>1. ب) الوديان والسهول - توفر موارد المياه والتربة الخصبة</p>
+                    <p>2. ج) المحيط الهادئ - أكبر محيط في العالم</p>
+                </div>
+            </div>
+
+            <!-- Exercise Card 3 -->
+            <div class="exercise-card">
+                <h3>التمرين الثالث: الجزائر الجغرافية</h3>
+                <p><strong>السؤال:</strong> أجب عن الأسئلة:</p>
+                <p>1. كم مساحة الجزائر تقريباً؟</p>
+                <p>2. ما اسم أطول جبل في الجزائر؟</p>
+                <p>3. ما اسم أكبر صحراء في الجزائر؟</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p>1. حوالي 2.38 مليون كم²</p>
+                    <p>2. جبل تاهات في الأطلس الصحاري</p>
+                    <p>3. صحراء الرمل الكبرى (الإرج)</p>
+                </div>
+            </div>
+
+            <!-- Tip Section -->
+            <div class="tip-box">
+                <h4>💡 نصائح لدراسة الجغرافيا:</h4>
+                <ul>
+                    <li>استخدم الخرائط الجغرافية لتحديد المواقع بشكل صحيح</li>
+                    <li>حفظ أسماء الدول والعواصم والأنهار المهمة</li>
+                    <li>فهم العلاقة بين المناخ والتضاريس والسكان</li>
+                    <li>اهتم برسم الخرائط وتلوينها للحفظ بشكل أفضل</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 محمد بلوزداد - جميع الحقوق محفوظة</p>
+        <div class="footer-links">
+            <a href="../privacy.html">سياسة الخصوصية</a> | 
+            <a href="../terms.html">الشروط والأحكام</a> | 
+            <a href="../contact.html">اتصل بنا</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+                button.textContent = 'إخفاء الإجابة';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'عرض الإجابة';
+            }
+        }
+    </script>
+</body>
+</html>

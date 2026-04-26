@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العلوم الطبيعية - السنة الثانية ثانوي</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="../index.html" class="logo">📚 محمد بلوزداد</a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../secondary.html">التعليم الثانوي</a></li>
+                    <li><a href="../exercises.html">التمارين</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">الرئيسية</a> > 
+            <a href="../secondary.html">التعليم الثانوي</a> > 
+            <span>السنة الثانية - العلوم الطبيعية</span>
+        </div>
+
+        <div class="container">
+            <h1>🧬 تمارين العلوم الطبيعية - السنة الثانية ثانوي</h1>
+            <p class="subtitle">محمد بلوزداد - موقع الملخصات والتمارين</p>
+
+            <!-- Exercise Card 1 -->
+            <div class="exercise-card">
+                <h3>التمرين الأول: الانقسام الميتوزي والميوسي</h3>
+                <p><strong>السؤال:</strong> ما الفرق بين الانقسام الميتوزي والانقسام الميوسي؟</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p><strong>الانقسام الميتوزي:</strong></p>
+                    <p>- ينتج خليتان متطابقتان</p>
+                    <p>- عدد الكروموسومات يبقى نفسه (2n)</p>
+                    <p>- يحدث في الخلايا الجسدية</p>
+                    <p><strong>الانقسام الميوسي:</strong></p>
+                    <p>- ينتج أربع خلايا مختلفة</p>
+                    <p>- عدد الكروموسومات ينقص إلى النصف (n)</p>
+                    <p>- يحدث في الخلايا الجنسية</p>
+                </div>
+            </div>
+
+            <!-- Exercise Card 2 -->
+            <div class="exercise-card">
+                <h3>التمرين الثاني: الوراثة - قانون مندل الأول</h3>
+                <p><strong>السؤال:</strong> نبات أحمر الأزهار (AA) يتزاوج مع نبات أبيض الأزهار (aa). ما ألوان الأزهار في الجيل الأول؟</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الحل:</strong></p>
+                    <p>التزاوج: AA × aa</p>
+                    <p>جميع النسل سيكون: Aa</p>
+                    <p><strong>الإجابة:</strong> كل الأزهار في الجيل الأول ستكون حمراء (لأن الأحمر سائد على الأبيض)</p>
+                </div>
+            </div>
+
+            <!-- Exercise Card 3 -->
+            <div class="exercise-card">
+                <h3>التمرين الثالث: التطور والتكيف</h3>
+                <p><strong>السؤال:</strong> اذكر ثلاث أمثلة على التكيفات في الكائنات الحية؟</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p>1. جلد الجمل السميك يحميه من الحرارة الشديدة</p>
+                    <p>2. ألوان الفراشات تساعدها على الاختباء من الحيوانات المفترسة</p>
+                    <p>3. جذور النبات تتعمق في التربة للبحث عن الماء</p>
+                </div>
+            </div>
+
+            <!-- Tip Section -->
+            <div class="tip-box">
+                <h4>💡 نصائح لدراسة العلوم الطبيعية:</h4>
+                <ul>
+                    <li>استخدم الرسومات التوضيحية لفهم العمليات البيولوجية</li>
+                    <li>احفظ الخطوات التفصيلية للانقسامات الخلوية</li>
+                    <li>طبق قانون مندل على أمثلة متنوعة</li>
+                    <li>فهم علاقة التطور والتكيف بالطبيعة</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 محمد بلوزداد - جميع الحقوق محفوظة</p>
+        <div class="footer-links">
+            <a href="../privacy.html">سياسة الخصوصية</a> | 
+            <a href="../terms.html">الشروط والأحكام</a> | 
+            <a href="../contact.html">اتصل بنا</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+                button.textContent = 'إخفاء الإجابة';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'عرض الإجابة';
+            }
+        }
+    </script>
+</body>
+</html>

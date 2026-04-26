@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختيار أفضل طريقة نشر</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', 'Droid Arabic Kufi', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        .quiz {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .question {
+            margin: 20px 0;
+        }
+
+        .question label {
+            display: block;
+            padding: 15px;
+            margin: 10px 0;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .question label:hover {
+            background: #f0f4ff;
+            border-color: #667eea;
+        }
+
+        .question input[type="radio"] {
+            margin-left: 10px;
+        }
+
+        .results {
+            display: none;
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            border-right: 4px solid #4caf50;
+            margin-top: 30px;
+        }
+
+        .results.show {
+            display: block;
+        }
+
+        .method-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .method-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .method-card .pros {
+            text-align: right;
+            margin: 15px 0;
+        }
+
+        .method-card .pros p {
+            padding: 5px 0;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            width: 100%;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.02);
+        }
+
+        .comparison-table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 15px;
+            text-align: right;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .comparison-table th {
+            background: #667eea;
+            color: white;
+        }
+
+        .comparison-table tr:hover {
+            background: #f5f5f5;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #ff9800;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.85em;
+        }
+
+        .badge.recommended {
+            background: #4caf50;
+        }
+
+        .guide {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .guide h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .guide ol {
+            margin-right: 20px;
+        }
+
+        .guide li {
+            margin: 10px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #999;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.3em;
+            }
+
+            .comparison-table {
+                font-size: 0.85em;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 اختر أفضل طريقة نشر موقعك</h1>
+
+        <div class="quiz">
+            <h2 style="color: #667eea; margin-bottom: 20px;">أجب على بعض الأسئلة:</h2>
+
+            <div class="question">
+                <h3>1️⃣ ما مستوى خبرتك التقنية؟</h3>
+                <label>
+                    <input type="radio" name="experience" value="beginner">
+                    مبتدئ - لا أملك خبرة تقنية
+                </label>
+                <label>
+                    <input type="radio" name="experience" value="intermediate">
+                    متوسط - لدي بعض الخبرة
+                </label>
+                <label>
+                    <input type="radio" name="experience" value="advanced">
+                    متقدم - أملك خبرة عالية
+                </label>
+            </div>
+
+            <div class="question">
+                <h3>2️⃣ كم لديك من الميزانية؟</h3>
+                <label>
+                    <input type="radio" name="budget" value="free">
+                    💰 مجاني فقط
+                </label>
+                <label>
+                    <input type="radio" name="budget" value="cheap">
+                    💵 رخيص (أقل من 50 ريال/سنة)
+                </label>
+                <label>
+                    <input type="radio" name="budget" value="normal">
+                    💳 متوسط (50-500 ريال/سنة)
+                </label>
+            </div>
+
+            <div class="question">
+                <h3>3️⃣ ما الأولوية الرئيسية؟</h3>
+                <label>
+                    <input type="radio" name="priority" value="easy">
+                    ⚡ السهولة واستغراق الوقت الأقل
+                </label>
+                <label>
+                    <input type="radio" name="priority" value="speed">
+                    🚀 السرعة والأداء العالي
+                </label>
+                <label>
+                    <input type="radio" name="priority" value="control">
+                    🔧 التحكم الكامل والمرونة
+                </label>
+            </div>
+
+            <div class="question">
+                <h3>4️⃣ هل لديك حساب GitHub؟</h3>
+                <label>
+                    <input type="radio" name="github" value="yes">
+                    ✅ نعم، لدي حساب
+                </label>
+                <label>
+                    <input type="radio" name="github" value="no">
+                    ❌ لا، لم أنشئ حساباً بعد
+                </label>
+            </div>
+
+            <button onclick="showResults()">🎯 اختر أفضل طريقة لي</button>
+        </div>
+
+        <div id="results" class="results">
+            <h2 style="color: #4caf50; margin-bottom: 20px;">✅ النتيجة والتوصية</h2>
+            <div id="recommendation"></div>
+            <div id="alternativeMethods"></div>
+        </div>
+
+        <div style="margin-top: 40px;">
+            <h2 style="color: #667eea; margin-bottom: 20px;">📊 جدول المقارنة</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>المنصة</th>
+                        <th>السهولة</th>
+                        <th>التكلفة</th>
+                        <th>السرعة</th>
+                        <th>التحكم</th>
+                        <th>الأفضل ل</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>GitHub Pages</strong></td>
+                        <td>⭐⭐⭐⭐ متوسط</td>
+                        <td>🆓 مجاني</td>
+                        <td>⚡⚡⚡ جيد</td>
+                        <td>🔧🔧 متوسط</td>
+                        <td>المبتدئين</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Netlify</strong></td>
+                        <td>⭐⭐⭐⭐⭐ سهل جداً</td>
+                        <td>🆓 مجاني</td>
+                        <td>⚡⚡⚡⚡ سريع</td>
+                        <td>🔧🔧 متوسط</td>
+                        <td>الجميع</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vercel</strong></td>
+                        <td>⭐⭐⭐⭐⭐ سهل جداً</td>
+                        <td>🆓 مجاني</td>
+                        <td>⚡⚡⚡⚡⚡ الأسرع</td>
+                        <td>🔧🔧 متوسط</td>
+                        <td>المحترفين</td>
+                    </tr>
+                    <tr>
+                        <td><strong>استضافة عادية</strong></td>
+                        <td>⭐⭐⭐ صعب</td>
+                        <td>💰💰 مدفوع</td>
+                        <td>⚡⚡ محدود</td>
+                        <td>🔧🔧🔧 كامل</td>
+                        <td>المحترفين</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="guide">
+            <h4>📋 خطوات عامة للنشر</h4>
+            <ol>
+                <li><strong>اختبر الموقع محلياً:</strong> تشغيل السيرفر على جهازك</li>
+                <li><strong>تحقق من جميع الروابط:</strong> تأكد من عدم وجود أخطاء</li>
+                <li><strong>اختبر على أجهزة مختلفة:</strong> هاتف، لابتوب، تابلت</li>
+                <li><strong>اختر منصة النشر:</strong> بناءً على احتياجاتك</li>
+                <li><strong>أتبع التعليمات:</strong> لكل منصة تعليمات خاصة</li>
+                <li><strong>راقب الموقع:</strong> تحقق من أنه يعمل بشكل صحيح</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 موقع الملخصات والتمارين</p>
+            <p>🚀 موقعك جاهز للنشر! اختر الطريقة المناسبة لك</p>
+        </div>
+    </div>
+
+    <script>
+        function showResults() {
+            const experience = document.querySelector('input[name="experience"]:checked')?.value;
+            const budget = document.querySelector('input[name="budget"]:checked')?.value;
+            const priority = document.querySelector('input[name="priority"]:checked')?.value;
+            const github = document.querySelector('input[name="github"]:checked')?.value;
+
+            if (!experience || !budget || !priority || !github) {
+                alert('الرجاء الإجابة على جميع الأسئلة!');
+                return;
+            }
+
+            const resultsDiv = document.getElementById('results');
+            const recommendationDiv = document.getElementById('recommendation');
+            const alternativeDiv = document.getElementById('alternativeMethods');
+
+            let recommendation = '';
+            let alternative = '';
+
+            // Logic for recommendation
+            if (experience === 'beginner' && budget === 'free' && github === 'no') {
+                recommendation = `
+                    <div class="method-card" style="font-size: 1.2em;">
+                        <h3>🎯 التوصية: Netlify</h3>
+                        <div class="pros">
+                            <p>✅ الأسهل للمبتدئين</p>
+                            <p>✅ مجاني تماماً</p>
+                            <p>✅ نشر تلقائي من GitHub</p>
+                            <p>✅ واجهة بديهية جداً</p>
+                        </div>
+                        <span class="badge recommended">موصى به</span>
+                    </div>
+                    <div class="guide">
+                        <h4>⚡ الخطوات السريعة:</h4>
+                        <ol>
+                            <li>أنشئ حساب GitHub (مجاني)</li>
+                            <li>ارفع ملفات الموقع</li>
+                            <li>اذهب إلى <strong>netlify.com</strong></li>
+                            <li>ربط حسابك مع GitHub</li>
+                            <li>اختر المستودع</li>
+                            <li>اضغط Deploy!</li>
+                        </ol>
+                    </div>
+                `;
+                alternative = `
+                    <h3>🔄 خيارات بديلة:</h3>
+                    <div class="method-card" style="background: #ff9800;">
+                        <h3>Vercel</h3>
+                        <p>مماثل لـ Netlify لكن أسرع</p>
+                        <span class="badge">سريع جداً</span>
+                    </div>
+                    <div class="method-card" style="background: #2196f3;">
+                        <h3>GitHub Pages</h3>
+                        <p>مجاني وموثوق للمبتدئين</p>
+                        <span class="badge">مجاني</span>
+                    </div>
+                `;
+            } else if (budget === 'free') {
+                recommendation = `
+                    <div class="method-card">
+                        <h3>🎯 التوصية: Netlify أو Vercel</h3>
+                        <p>كلاهما مجاني وسهل جداً!</p>
+                        <span class="badge recommended">الأفضل المجاني</span>
+                    </div>
+                `;
+                alternative = `
+                    <h3>المقارنة:</h3>
+                    <p><strong>Netlify:</strong> الأسهل والأكثر شيوعاً</p>
+                    <p><strong>Vercel:</strong> الأسرع والأكثر احترافية</p>
+                    <p><strong>GitHub Pages:</strong> الأفضل للمطورين</p>
+                `;
+            } else if (priority === 'speed') {
+                recommendation = `
+                    <div class="method-card" style="background: #ff6b6b;">
+                        <h3>🚀 التوصية: Vercel</h3>
+                        <p>الأسرع أداء عالمياً</p>
+                        <span class="badge">الأسرع</span>
+                    </div>
+                `;
+            } else if (priority === 'control') {
+                recommendation = `
+                    <div class="method-card" style="background: #4caf50;">
+                        <h3>🔧 التوصية: استضافة عادية</h3>
+                        <p>تحكم كامل على كل شيء</p>
+                        <span class="badge">كامل التحكم</span>
+                    </div>
+                `;
+            } else {
+                recommendation = `
+                    <div class="method-card">
+                        <h3>✅ التوصية: Netlify</h3>
+                        <p>الخيار الأمثل لمعظم الحالات</p>
+                        <span class="badge recommended">الأفضل</span>
+                    </div>
+                `;
+            }
+
+            recommendationDiv.innerHTML = recommendation;
+            alternativeDiv.innerHTML = alternative;
+            resultsDiv.classList.add('show');
+
+            // Scroll to results
+            resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    </script>
+</body>
+</html>

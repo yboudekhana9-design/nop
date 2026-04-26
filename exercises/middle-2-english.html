@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اللغة الإنجليزية - السنة الثانية متوسط</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="../index.html" class="logo">📚 محمد بلوزداد</a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../middle.html">التعليم المتوسط</a></li>
+                    <li><a href="../exercises.html">التمارين</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">الرئيسية</a> > 
+            <a href="../middle.html">التعليم المتوسط</a> > 
+            <span>السنة الثانية - اللغة الإنجليزية</span>
+        </div>
+
+        <div class="container">
+            <h1>🌍 تمارين اللغة الإنجليزية - السنة الثانية متوسط</h1>
+            <p class="subtitle">محمد بلوزداد - موقع الملخصات والتمارين</p>
+
+            <!-- Exercise Card 1 -->
+            <div class="exercise-card">
+                <h3>التمرين الأول: الأفعال في الزمن الحاضر البسيط</h3>
+                <p><strong>السؤال:</strong> أكمل الجمل بالشكل الصحيح:</p>
+                <p>1. She _______ (play) basketball every day.</p>
+                <p>2. They _______ (go) to school in the morning.</p>
+                <p>3. He _______ (eat) breakfast at 7 AM.</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p>1. She <strong>plays</strong> basketball every day.</p>
+                    <p>2. They <strong>go</strong> to school in the morning.</p>
+                    <p>3. He <strong>eats</strong> breakfast at 7 AM.</p>
+                    <p><strong>ملاحظة:</strong> نضيف 's' أو 'es' للفعل عندما يكون الفاعل في الشخص الثالث المفرد</p>
+                </div>
+            </div>
+
+            <!-- Exercise Card 2 -->
+            <div class="exercise-card">
+                <h3>التمرين الثاني: الصفات (Adjectives)</h3>
+                <p><strong>السؤال:</strong> اختر الصفة المناسبة:</p>
+                <p>1. The weather is very _______ today. (hot / hotter)</p>
+                <p>2. This book is _______ than that one. (good / better)</p>
+                <p>3. She has _______ eyes. (blue / bluer)</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p>1. hot (نستخدم الصفة العادية للوصف)</p>
+                    <p>2. better (نستخدم المقارنة عند المقارنة بين شيئين)</p>
+                    <p>3. blue (نستخدم الصفة العادية للوصف)</p>
+                </div>
+            </div>
+
+            <!-- Exercise Card 3 -->
+            <div class="exercise-card">
+                <h3>التمرين الثالث: الفهم والاستيعاب</h3>
+                <p><strong>النص:</strong></p>
+                <p>My name is Sarah. I live in a big city called Cairo. I study English at school. I like reading books and playing sports. My favorite sport is basketball. On weekends, I play with my friends in the park.</p>
+                <p><strong>الأسئلة:</strong></p>
+                <p>1. Where does Sarah live?</p>
+                <p>2. What is her favorite sport?</p>
+                <p>3. When does she play basketball?</p>
+                
+                <button class="exercise-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer" style="display: none;">
+                    <p><strong>الإجابة:</strong></p>
+                    <p>1. She lives in Cairo (a big city)</p>
+                    <p>2. Her favorite sport is basketball</p>
+                    <p>3. She plays basketball on weekends in the park with her friends</p>
+                </div>
+            </div>
+
+            <!-- Tip Section -->
+            <div class="tip-box">
+                <h4>💡 نصائح لتعلم اللغة الإنجليزية:</h4>
+                <ul>
+                    <li>مارس الاستماع من خلال الفيديوهات والموسيقى الإنجليزية</li>
+                    <li>اقرأ نصوص إنجليزية بسيطة لتحسين المفردات</li>
+                    <li>تحدث مع نفسك بالإنجليزية لممارسة النطق</li>
+                    <li>احفظ المفردات الجديدة بشكل منتظم</li>
+                    <li>ركز على قواعس اللغة الأساسية أولاً</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 محمد بلوزداد - جميع الحقوق محفوظة</p>
+        <div class="footer-links">
+            <a href="../privacy.html">سياسة الخصوصية</a> | 
+            <a href="../terms.html">الشروط والأحكام</a> | 
+            <a href="../contact.html">اتصل بنا</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+                button.textContent = 'إخفاء الإجابة';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'عرض الإجابة';
+            }
+        }
+    </script>
+</body>
+</html>

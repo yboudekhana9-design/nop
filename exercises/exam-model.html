@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="اختبار نموذجي شامل - جميع المستويات">
+    <title>اختبار نموذجي شامل - موقع الملخصات</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <a href="../index.html" class="logo">
+                <div class="logo-img">📚</div>
+                <span>موقع الملخصات</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../exercises.html">التمارين</a></li>
+                    <li><a href="../contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="../index.html">الرئيسية</a> > 
+            <a href="../exercises.html">التمارين</a> > 
+            <span>اختبار شامل</span>
+        </div>
+
+        <!-- Exercise Content -->
+        <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+            <h1>🏆 اختبار نموذجي شامل</h1>
+            <p style="font-size: 16px; color: #666;">
+                هذا الاختبار يغطي مواد مختلفة من جميع المستويات التعليمية
+            </p>
+
+            <h2>ℹ️ معلومات الاختبار</h2>
+            <div style="background: #f5f5f5; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                <p><strong>عدد الأسئلة:</strong> 20 سؤال</p>
+                <p><strong>المدة:</strong> 90 دقيقة</p>
+                <p><strong>الدرجة الكلية:</strong> 100 نقطة</p>
+                <p><strong>درجة النجاح:</strong> 50 نقطة</p>
+                <p><strong>المستويات:</strong> ابتدائي - متوسط - ثانوي</p>
+            </div>
+
+            <h2>📋 تعليمات الاختبار</h2>
+            <ul style="padding: 20px 30px; background: #f0f4ff; border-radius: 10px; border-right: 4px solid #667eea; margin: 20px 0;">
+                <li>اقرأ كل سؤال بعناية قبل الإجابة عليه</li>
+                <li>اختر إجابة واحدة فقط لكل سؤال</li>
+                <li>تجنب الأخطاء الإملائية والنحوية</li>
+                <li>لا تترك أي سؤال بدون إجابة</li>
+                <li>تحقق من إجاباتك قبل إرسال الاختبار</li>
+            </ul>
+
+            <h2>❓ نموذج الأسئلة</h2>
+
+            <div style="background: #fff5e6; padding: 20px; border-radius: 8px; margin: 20px 0; border-right: 4px solid #ff9800;">
+                <h4>📌 قسم اللغة العربية</h4>
+                
+                <div style="background: white; padding: 15px; margin: 15px 0; border-radius: 5px;">
+                    <p><strong>السؤال 1:</strong> ما نوع الجملة في "الطالب يحل المسائل"؟</p>
+                    <p style="margin: 15px 0; padding: 10px; background: #f5f5f5; border-radius: 5px;">
+                        أ) جملة اسمية&nbsp;&nbsp;&nbsp;&nbsp;ب) جملة فعلية&nbsp;&nbsp;&nbsp;&nbsp;ج) جملة مختلطة
+                    </p>
+                    <button class="exercise-btn" onclick="toggleAnswer(this)" style="width: 100%; margin-top: 10px;">عرض الإجابة</button>
+                    <div style="display: none; background: #f9f9f9; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                        <strong>✅ الإجابة: ب) جملة فعلية</strong>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 15px; margin: 15px 0; border-radius: 5px;">
+                    <p><strong>السؤال 2:</strong> ما معنى كلمة "الحكمة"؟</p>
+                    <p style="margin: 15px 0; padding: 10px; background: #f5f5f5; border-radius: 5px;">
+                        أ) الجهل والغفلة&nbsp;&nbsp;&nbsp;&nbsp;ب) العلم والفهم الصحيح&nbsp;&nbsp;&nbsp;&nbsp;ج) التسرع والحماقة
+                    </p>
+                    <button class="exercise-btn" onclick="toggleAnswer(this)" style="width: 100%; margin-top: 10px;">عرض الإجابة</button>
+                    <div style="display: none; background: #f9f9f9; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                        <strong>✅ الإجابة: ب) العلم والفهم الصحيح</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: #e8f5e9; padding: 20px; border-radius: 8px; margin: 20px 0; border-right: 4px solid #4caf50;">
+                <h4>📌 قسم الرياضيات</h4>
+                
+                <div style="background: white; padding: 15px; margin: 15px 0; border-radius: 5px;">
+                    <p><strong>السؤال 3:</strong> احسب: 15 ÷ 3</p>
+                    <p style="margin: 15px 0; padding: 10px; background: #f5f5f5; border-radius: 5px;">
+                        أ) 3&nbsp;&nbsp;&nbsp;&nbsp;ب) 5&nbsp;&nbsp;&nbsp;&nbsp;ج) 12
+                    </p>
+                    <button class="exercise-btn" onclick="toggleAnswer(this)" style="width: 100%; margin-top: 10px;">عرض الإجابة</button>
+                    <div style="display: none; background: #f9f9f9; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                        <strong>✅ الإجابة: ب) 5</strong>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 15px; margin: 15px 0; border-radius: 5px;">
+                    <p><strong>السؤال 4:</strong> حل المعادلة: x + 7 = 15</p>
+                    <p style="margin: 15px 0; padding: 10px; background: #f5f5f5; border-radius: 5px;">
+                        أ) x = 8&nbsp;&nbsp;&nbsp;&nbsp;ب) x = 22&nbsp;&nbsp;&nbsp;&nbsp;ج) x = 2
+                    </p>
+                    <button class="exercise-btn" onclick="toggleAnswer(this)" style="width: 100%; margin-top: 10px;">عرض الإجابة</button>
+                    <div style="display: none; background: #f9f9f9; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                        <strong>✅ الإجابة: أ) x = 8</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0; border-right: 4px solid #2196f3;">
+                <h4>📌 قسم العلوم</h4>
+                
+                <div style="background: white; padding: 15px; margin: 15px 0; border-radius: 5px;">
+                    <p><strong>السؤال 5:</strong> كم عدد فترات الجدول الدوري؟</p>
+                    <p style="margin: 15px 0; padding: 10px; background: #f5f5f5; border-radius: 5px;">
+                        أ) 5&nbsp;&nbsp;&nbsp;&nbsp;ب) 7&nbsp;&nbsp;&nbsp;&nbsp;ج) 8
+                    </p>
+                    <button class="exercise-btn" onclick="toggleAnswer(this)" style="width: 100%; margin-top: 10px;">عرض الإجابة</button>
+                    <div style="display: none; background: #f9f9f9; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                        <strong>✅ الإجابة: ب) 7</strong>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 15px; margin: 15px 0; border-radius: 5px;">
+                    <p><strong>السؤال 6:</strong> ما هي أصغر وحدة حية؟</p>
+                    <p style="margin: 15px 0; padding: 10px; background: #f5f5f5; border-radius: 5px;">
+                        أ) الذرة&nbsp;&nbsp;&nbsp;&nbsp;ب) الخلية&nbsp;&nbsp;&nbsp;&nbsp;ج) الجزيء
+                    </p>
+                    <button class="exercise-btn" onclick="toggleAnswer(this)" style="width: 100%; margin-top: 10px;">عرض الإجابة</button>
+                    <div style="display: none; background: #f9f9f9; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                        <strong>✅ الإجابة: ب) الخلية</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0; border-right: 4px solid #ff6f00;">
+                <h4>📌 قسم التاريخ والجغرافيا</h4>
+                
+                <div style="background: white; padding: 15px; margin: 15px 0; border-radius: 5px;">
+                    <p><strong>السؤال 7:</strong> كم عدد القارات في العالم؟</p>
+                    <p style="margin: 15px 0; padding: 10px; background: #f5f5f5; border-radius: 5px;">
+                        أ) 5&nbsp;&nbsp;&nbsp;&nbsp;ب) 6&nbsp;&nbsp;&nbsp;&nbsp;ج) 7
+                    </p>
+                    <button class="exercise-btn" onclick="toggleAnswer(this)" style="width: 100%; margin-top: 10px;">عرض الإجابة</button>
+                    <div style="display: none; background: #f9f9f9; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                        <strong>✅ الإجابة: ج) 7</strong>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 15px; margin: 15px 0; border-radius: 5px;">
+                    <p><strong>السؤال 8:</strong> متى كانت الثورة الفرنسية؟</p>
+                    <p style="margin: 15px 0; padding: 10px; background: #f5f5f5; border-radius: 5px;">
+                        أ) 1689&nbsp;&nbsp;&nbsp;&nbsp;ب) 1789&nbsp;&nbsp;&nbsp;&nbsp;ج) 1889
+                    </p>
+                    <button class="exercise-btn" onclick="toggleAnswer(this)" style="width: 100%; margin-top: 10px;">عرض الإجابة</button>
+                    <div style="display: none; background: #f9f9f9; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                        <strong>✅ الإجابة: ب) 1789</strong>
+                    </div>
+                </div>
+            </div>
+
+            <h2>📊 نموذج الدرجات</h2>
+            <table style="width: 100%; margin: 20px 0; border-collapse: collapse; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); border-radius: 10px; overflow: hidden;">
+                <thead style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <tr>
+                        <th style="padding: 15px; text-align: right;">النتيجة</th>
+                        <th style="padding: 15px; text-align: center;">من 0 إلى 50</th>
+                        <th style="padding: 15px; text-align: center;">من 51 إلى 70</th>
+                        <th style="padding: 15px; text-align: center;">من 71 إلى 85</th>
+                        <th style="padding: 15px; text-align: center;">من 86 إلى 100</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 12px 15px;">الحالة</td>
+                        <td style="padding: 12px 15px; text-align: center;">راسب</td>
+                        <td style="padding: 12px 15px; text-align: center;">مقبول</td>
+                        <td style="padding: 12px 15px; text-align: center;">جيد</td>
+                        <td style="padding: 12px 15px; text-align: center;">ممتاز</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>💡 نصائح للنجاح</h2>
+            <ul style="padding: 20px 30px; background: #f0f4ff; border-radius: 10px; border-right: 4px solid #667eea;">
+                <li>ركز على المواضيع المهمة والأساسية</li>
+                <li>حل تمارين متنوعة قبل الاختبار</li>
+                <li>اقضِ وقتاً كافياً في مراجعة دروسك</li>
+                <li>تجنب الإرهاق والتوتر قبل الامتحان</li>
+                <li>احصل على نوم كافٍ قبل يوم الامتحان</li>
+            </ul>
+
+            <a href="../exercises.html" class="exercise-btn" style="display: block; margin-top: 30px; text-align: center;">العودة إلى التمارين</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 موقع الملخصات والتمارين - جميع الحقوق محفوظة</p>
+        <div class="footer-links">
+            <a href="../privacy.html">سياسة الخصوصية</a>
+            <a href="../terms.html">الشروط والأحكام</a>
+            <a href="../contact.html">اتصل بنا</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.parentElement.querySelector('div:last-of-type');
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+                button.textContent = 'إخفاء الإجابة';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'عرض الإجابة';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="اتصل بنا - موقع الملخصات والتمارين">
+    <title>اتصل بنا - موقع الملخصات والتمارين</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 30px auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 14px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .contact-info {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .contact-info h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-img">📚</div>
+                <span>موقع الملخصات</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="primary.html">الابتدائي</a></li>
+                    <li><a href="middle.html">المتوسط</a></li>
+                    <li><a href="secondary.html">الثانوي</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="index.html">الرئيسية</a> > <span>اتصل بنا</span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1>📧 اتصل بنا</h1>
+            <p style="text-align: center; color: #666; margin-bottom: 30px;">
+                لديك استفسار أو اقتراح؟ نحن هنا لمساعدتك. أرسل لنا رسالة واترك بيانات تواصلك وسنرد عليك في أقرب وقت.
+            </p>
+
+            <!-- Contact Form -->
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">الاسم الكامل*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">الموضوع*</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">الرسالة*</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">إرسال الرسالة</button>
+            </form>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>📍 معلومات التواصل</h2>
+                <h3>📧 البريد الإلكتروني</h3>
+                <p>info@mohammedblouzdat.com</p>
+
+                <h3>📱 الهاتف</h3>
+                <p>+213 (0) 555-123-456</p>
+
+                <h3>🕐 ساعات العمل</h3>
+                <p>من الإثنين إلى الجمعة: 9:00 صباحاً - 5:00 مساءً</p>
+                <p>السبت والأحد: مغلق</p>
+
+                <h3>📍 الموقع</h3>
+                <p>الجزائر</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 موقع الملخصات والتمارين - جميع الحقوق محفوظة</p>
+        <div class="footer-links">
+            <a href="#">سياسة الخصوصية</a>
+            <a href="#">الشروط والأحكام</a>
+            <a href="#">اتصل بنا</a>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('شكراً لتواصلك معنا! سنرد على رسالتك قريباً.');
+            document.querySelector('.contact-form').reset();
+        }
+    </script>
+</body>
+</html>

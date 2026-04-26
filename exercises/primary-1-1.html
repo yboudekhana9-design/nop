@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="التمرين الأول - التعريف بالحروف">
+    <title>التمرين الأول: التعريف بالحروف</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .exercise-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        .question {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-right: 4px solid #667eea;
+        }
+
+        .question h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .answer {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-right: 3px solid #764ba2;
+            display: none;
+        }
+
+        .answer.show {
+            display: block;
+        }
+
+        .toggle-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-btn:hover {
+            background: #764ba2;
+        }
+
+        .letter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .letter-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .letter-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <a href="../index.html" class="logo">
+                <div class="logo-img">📚</div>
+                <span>موقع الملخصات</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../primary.html">الابتدائي</a></li>
+                    <li><a href="../exercises.html">التمارين</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="../index.html">الرئيسية</a> > 
+            <a href="../primary.html">التعليم الابتدائي</a> > 
+            <span>التمرين الأول: التعريف بالحروف</span>
+        </div>
+
+        <!-- Exercise Content -->
+        <div class="exercise-container">
+            <h1>📖 التمرين الأول: التعريف بالحروف</h1>
+            <p><strong>المستوى:</strong> التحضيري</p>
+            <p><strong>المادة:</strong> اللغة العربية</p>
+
+            <h2>🎯 أهداف التمرين</h2>
+            <ul style="padding: 20px 30px; background: #f5f5f5; border-radius: 10px;">
+                <li>تعرّف الطالب على حروف الهجاء العربية</li>
+                <li>نطق الحروف بشكل صحيح</li>
+                <li>كتابة الحروف بشكل صحيح</li>
+                <li>تمييز الحروف المختلفة</li>
+            </ul>
+
+            <h2>📚 حروف الهجاء</h2>
+            <div class="letter-grid">
+                <div class="letter-card">أ</div>
+                <div class="letter-card">ب</div>
+                <div class="letter-card">ت</div>
+                <div class="letter-card">ث</div>
+                <div class="letter-card">ج</div>
+                <div class="letter-card">ح</div>
+                <div class="letter-card">خ</div>
+                <div class="letter-card">د</div>
+                <div class="letter-card">ذ</div>
+                <div class="letter-card">ر</div>
+                <div class="letter-card">ز</div>
+                <div class="letter-card">س</div>
+            </div>
+
+            <h2>❓ أسئلة التمرين</h2>
+
+            <div class="question">
+                <h4>السؤال الأول: اختر الحرف الصحيح</h4>
+                <p>الحرف الأول من كلمة "أسد" هو:</p>
+                <p style="margin: 15px 0; padding: 10px; background: white; border-radius: 5px;">
+                    أ) ب&nbsp;&nbsp;&nbsp;&nbsp;ب) أ&nbsp;&nbsp;&nbsp;&nbsp;ج) س
+                </p>
+                <button class="toggle-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer">
+                    <strong>✅ الإجابة الصحيحة: ب) أ</strong>
+                    <p>الحرف الأول من كلمة "أسد" هو الهمزة (أ).</p>
+                </div>
+            </div>
+
+            <div class="question">
+                <h4>السؤال الثاني: النطق الصحيح</h4>
+                <p>نطق الحرف "ج" يكون مثل:</p>
+                <p style="margin: 15px 0; padding: 10px; background: white; border-radius: 5px;">
+                    أ) الجيم كما في كلمة "جمل"&nbsp;&nbsp;&nbsp;&nbsp;ب) الجاء كما في كلمة "جاء"
+                </p>
+                <button class="toggle-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer">
+                    <strong>✅ الإجابة الصحيحة: أ) الجيم كما في كلمة "جمل"</strong>
+                    <p>الحرف "ج" ينطق "جيم" وهو يأتي في بداية الكلمة مثل "جمل" أو "جنة".</p>
+                </div>
+            </div>
+
+            <div class="question">
+                <h4>السؤال الثالث: الكتابة الصحيحة</h4>
+                <p>كيف تكتب كلمة "بيت"؟</p>
+                <p style="margin: 15px 0; padding: 10px; background: white; border-radius: 5px;">
+                    أ) بت&nbsp;&nbsp;&nbsp;&nbsp;ب) بيت&nbsp;&nbsp;&nbsp;&nbsp;ج) بيتة
+                </p>
+                <button class="toggle-btn" onclick="toggleAnswer(this)">عرض الإجابة</button>
+                <div class="answer">
+                    <strong>✅ الإجابة الصحيحة: ب) بيت</strong>
+                    <p>تكتب كلمة "بيت" من ثلاثة حروف: الباء والياء والتاء، وتعني المنزل.</p>
+                </div>
+            </div>
+
+            <h2>💡 ملاحظات مهمة</h2>
+            <ul style="padding: 20px 30px; background: #f0f4ff; border-radius: 10px; border-right: 4px solid #667eea;">
+                <li>حروف الهجاء العربية 28 حرف</li>
+                <li>كل حرف له شكل مختلف في بداية ووسط ونهاية الكلمة</li>
+                <li>يجب نطق الحروف بشكل صحيح لفهم اللغة</li>
+                <li>الممارسة المستمرة تساعد على إتقان الحروف</li>
+            </ul>
+
+            <h2>📝 تمارين إضافية</h2>
+            <p style="background: #fff3cd; padding: 15px; border-radius: 8px; margin: 20px 0;">
+                اكتب 5 كلمات تبدأ بكل من الحروف: أ، ب، ج، د، ه
+            </p>
+
+            <a href="../primary.html" class="exercise-btn" style="margin-top: 30px;">العودة إلى الدروس</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 موقع الملخصات والتمارين - جميع الحقوق محفوظة</p>
+        <div class="footer-links">
+            <a href="#">سياسة الخصوصية</a>
+            <a href="#">الشروط والأحكام</a>
+            <a href="#">اتصل بنا</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            answer.classList.toggle('show');
+            button.textContent = answer.classList.contains('show') ? 'إخفاء الإجابة' : 'عرض الإجابة';
+        }
+    </script>
+</body>
+</html>

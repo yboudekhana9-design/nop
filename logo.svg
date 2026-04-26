@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#grad1)"/>
+  
+  <!-- Book Shape -->
+  <g transform="translate(100, 100)">
+    <!-- Left Page -->
+    <rect x="-35" y="-40" width="30" height="70" fill="#ffffff" rx="2"/>
+    <!-- Right Page -->
+    <rect x="5" y="-40" width="30" height="70" fill="#f0f4ff" rx="2"/>
+    
+    <!-- Book Spine -->
+    <rect x="-5" y="-40" width="10" height="70" fill="#e0e6ff" rx="1"/>
+    
+    <!-- Lines on left page -->
+    <line x1="-30" y1="-30" x2="-10" y2="-30" stroke="#667eea" stroke-width="2"/>
+    <line x1="-30" y1="-20" x2="-10" y2="-20" stroke="#667eea" stroke-width="2"/>
+    <line x1="-30" y1="-10" x2="-10" y2="-10" stroke="#667eea" stroke-width="2"/>
+    
+    <!-- Lines on right page -->
+    <line x1="10" y1="-30" x2="30" y2="-30" stroke="#764ba2" stroke-width="2"/>
+    <line x1="10" y1="-20" x2="30" y2="-20" stroke="#764ba2" stroke-width="2"/>
+    <line x1="10" y1="-10" x2="30" y2="-10" stroke="#764ba2" stroke-width="2"/>
+    
+    <!-- Bookmark ribbon -->
+    <rect x="28" y="-45" width="4" height="85" fill="#ff6b6b" rx="2"/>
+    
+    <!-- Star decoration -->
+    <circle cx="0" cy="25" r="8" fill="#ffd93d"/>
+    <text x="0" y="30" font-size="12" font-weight="bold" text-anchor="middle" fill="#fff">★</text>
+  </g>
+  
+  <!-- Text below logo -->
+  <text x="100" y="175" font-size="16" font-weight="bold" text-anchor="middle" fill="#667eea" font-family="Arial, sans-serif">موقع الملخصات</text>
+</svg>
