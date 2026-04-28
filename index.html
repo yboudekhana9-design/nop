@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="page-id" content="homepage">
     <meta name="description" content="موقع محمد بلوزداد - أفضل الملخصات والتمارين ونماذج الفروض والاختبارات لجميع المواد والمستويات">
     <title>محمد بلوزداد - موقع الملخصات والتمارين</title>
     <link rel="stylesheet" href="style.css">
+    <script src="comments.js" defer></script>
+    <script src="file-publisher.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -70,6 +73,35 @@
             <p>✅ متاح للجميع بدون تكاليف</p>
             <p>✅ موقع موثوق من قبل آلاف الطلاب والمعلمين</p>
         </div>
+
+        <!-- Download Section -->
+        <div id="downloads-container"></div>
+
+        <!-- Comments Section -->
+        <div class="comments-section">
+            <div class="comments-header">
+                <h3>💬 التعليقات والآراء</h3>
+            </div>
+
+            <form id="comment-form" onsubmit="event.preventDefault(); submitComment();">
+                <h4>شارك رأيك معنا</h4>
+                <div class="form-group">
+                    <label for="comment-author">اسمك:</label>
+                    <input type="text" id="comment-author" placeholder="أدخل اسمك" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment-email">بريدك الإلكتروني (اختياري):</label>
+                    <input type="email" id="comment-email" placeholder="example@mail.com">
+                </div>
+                <div class="form-group">
+                    <label for="comment-content">رأيك أو اقتراحاتك:</label>
+                    <textarea id="comment-content" placeholder="شارك ملاحظاتك أو اقتراحاتك..." required></textarea>
+                </div>
+                <button type="submit" class="submit-comment-btn">✉️ نشر الرأي</button>
+            </form>
+
+            <div id="comments-section"></div>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -82,5 +114,17 @@
             <a href="about.html">عن الموقع</a>
         </div>
     </footer>
+
+    <script>
+        // Initialize downloads
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.filePublisher) {
+                const exercisePath = window.location.pathname;
+                window.filePublisher.renderDownloadButtons(
+                    exercisePath, 
+                    'downloads-container'
+                );
+            }
+        });
+    </script>
 </body>
-</html>
